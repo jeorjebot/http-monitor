@@ -1,0 +1,29 @@
+timeout: 30
+retries: 3
+alert: "email"
+services:
+  - name: "google"
+    url: "https://google.com"
+    status: 200
+    response_time: 20
+    alert_response_time: true
+    interval: 300 
+  - name: "bing"
+    url: "https://www.bing.com"
+  - name: "error"
+    url: "https://sjsdkskdjs.com"
+options:
+  email_alert:
+    cooldown: 60 
+    smtp_server:
+        address: "smtp-relay.sendinblue.com"
+        port: "587"
+        host: "smtp-relay.sendinblue.com"
+  report:
+    period: week
+    send_report_mail: true
+    redis_instance: 
+      host: "redis"
+      port: 8000
+    
+
