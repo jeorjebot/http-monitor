@@ -1,8 +1,16 @@
+# macos junk
+.DS_Store
+
+
+# vscode settings
+.vscode
+
+
+# local development
+TODO.md
+monitor2.yml
+.env
 Makefile
 Dockerfile-dev
 Dockerfile-local
 Dockerfile-prod
-.DS_Store
-
-.vscode
-README.md
