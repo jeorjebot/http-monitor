@@ -1,0 +1,8 @@
+Makefile
+Dockerfile-dev
+Dockerfile-local
+Dockerfile-prod
+.DS_Store
+
+.vscode
+README.md
